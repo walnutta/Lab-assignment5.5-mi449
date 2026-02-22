@@ -3,14 +3,20 @@ import { useState } from "react";
 import { createRoot } from 'react-dom/client'
 import './style.css'
 
+
 const Items = [
-  {id: 1, name: "Object 1"},
-  {id: 2, name: "Object 2"},
-  {id: 3, name: "Object 3"},
+  {id: Math.floor(Math.random() * 1000), name: "Object 1"},
+  {id: Math.floor(Math.random() * 1000), name: "Object 2"},
+  {id: Math.floor(Math.random() * 1000), name: "Object 3"},
 ];
 
 function Welcome() {
-  return <h1>Hello!</h1>
+  return (
+  <div>
+      <h1>Hello, world!</h1>
+      <p>Expand the list to see items</p>
+  </div>
+  );
 }
 
 function ItemList() {
